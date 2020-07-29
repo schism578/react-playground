@@ -1,4 +1,5 @@
 import React from 'react';
+import './Accordion.css'
 
 export default class Accordion extends React.Component {
     static defaultProps = { 
@@ -24,7 +25,7 @@ export default class Accordion extends React.Component {
       renderContent() {
         const currentSection = this.props.sections[this.state.currentSectionIndex]
         return (
-        <div className='content'>
+        <div className='content' id='content'>
             <p>{currentSection.content}</p>
         </div>
         )
@@ -34,7 +35,7 @@ export default class Accordion extends React.Component {
             <div>
                 <ul>
                     <li>
-                        <button>{this.renderButtons()}</button>
+                        {this.renderButtons()}
                         {!!this.props.sections.length && this.renderContent()}
                     </li>
                 </ul>
