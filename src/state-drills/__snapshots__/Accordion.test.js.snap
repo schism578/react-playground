@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Component only opens one section at a time 1`] = `
+<div>
+  <ul>
+    <li>
+      <button>
+        <button
+          key="0"
+          onClick={[Function]}
+        >
+          Section 1
+        </button>
+        <button
+          key="1"
+          onClick={[Function]}
+        >
+          Section 2
+        </button>
+        <button
+          key="2"
+          onClick={[Function]}
+        >
+          Section 3
+        </button>
+      </button>
+      <div
+        className="content"
+      >
+        <p>
+          Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordion Component opens any clicked section 1`] = `
+<div>
+  <ul>
+    <li>
+      <button>
+        <button
+          key="0"
+          onClick={[Function]}
+        >
+          Section 1
+        </button>
+        <button
+          key="1"
+          onClick={[Function]}
+        >
+          Section 2
+        </button>
+        <button
+          key="2"
+          onClick={[Function]}
+        >
+          Section 3
+        </button>
+      </button>
+      <div
+        className="content"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordion Component renders empty given no Accordion without errors 1`] = `
+<div>
+  <ul>
+    <li>
+      <button />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordion Component renders the no sections by default 1`] = `
+<div>
+  <ul>
+    <li>
+      <button>
+        <button
+          key="0"
+          onClick={[Function]}
+        >
+          Section 1
+        </button>
+        <button
+          key="1"
+          onClick={[Function]}
+        >
+          Section 2
+        </button>
+        <button
+          key="2"
+          onClick={[Function]}
+        >
+          Section 3
+        </button>
+      </button>
+      <div
+        className="content"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
