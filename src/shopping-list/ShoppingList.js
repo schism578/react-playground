@@ -2,20 +2,22 @@ import React from 'react'
 import ShoppingItem from './ShoppingItem'
 
 export default function ShoppingList(props) {
+  const {
+    items = {}, 
+    onCheckItem = () => {}, 
+    onDeleteItem = () => {}
+  } = props
+
   return (
     <ul>
-      {props.items.map((item, i) =>
+      {items.map((item, i) =>
         <ShoppingItem
           key={i}
           item={item}
-          onDeleteItem={props.onDeleteItem}
-          onCheckItem={props.onCheckItem}
+          onDeleteItem={onDeleteItem}
+          onCheckItem={onCheckItem}
         />
       )}
     </ul>
   )
-}
-
-ShoppingList.defaultProps = {
-  items: []
 }
